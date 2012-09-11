@@ -5,13 +5,16 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 $(call inherit-product, vendor/aokp/configs/common_versions.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/htc/vigor/device_vigor.mk)
 
 # Device naming
 PRODUCT_DEVICE := vigor
 PRODUCT_NAME := aokp_vigor
-PRODUCT_BRAND := htc
+PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC Rezound
 PRODUCT_MANUFACTURER := HTC
 
